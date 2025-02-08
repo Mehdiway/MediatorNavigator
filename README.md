@@ -36,5 +36,4 @@ This extension works out-of-the-box but can be customized in **Visual Studio’s
 - **Visual Studio 2022** with the **Extensibility Development** workload.
 
 ### Contributing
-
 Contributions are welcome! Feel free to submit a PR or open an issue.
