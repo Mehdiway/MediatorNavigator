@@ -8,6 +8,7 @@ A Visual Studio 2022 extension to quickly navigate from an `IRequest` to its cor
 - Works in **Visual Studio 2022** (Enterprise, Professional, and Community).
 
 ## Demo
+![Mediator Navigator Preview](https://github.com/Mehdiway/MediatorNavigator/blob/master/preview.png)
 
 ## Installation
 ### From the Visual Studio Marketplace
