@@ -22,7 +22,7 @@ A Visual Studio 2022 extension to quickly navigate from an `IRequest` to its cor
 
 ## Usage
 1. Open a C# file containing an **IRequest**.
-2. Click **Tools > Go to IRequestHandler** in Visual Studio's menu.
+2. Use **Edit > Go to IRequestHandler** or right-click on IRequest class name and then **Go to IRequestHandler**.
 3. The extension will:
 - Find the corresponding `IRequestHandler<TRequest, TResponse>`.
 - Open the file containing the handler.
