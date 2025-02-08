@@ -19,6 +19,7 @@
 
 	<!--This header contains the command ids for the menus provided by the shell. -->
 	<Extern href="vsshlids.h" />
+
 	<Include href="KnownImageIds.vsct"/>
 	<Include href="VSGlobals.vsct"/>
 
@@ -39,7 +40,10 @@
          must be a menu. -->
 		<Groups>
 			<Group guid="guidMediatorNavigatorPackageCmdSet" id="MyMenuGroup" priority="0x0600">
-				<Parent guid="VSMainMenu" id="Tools" />
+				<Parent guid="VSMainMenu" id="Edit" />
+			</Group>
+			<Group guid="guidMediatorNavigatorPackageCmdSet" id="MyMenuGroupContext" priority="0x0600">
+				<Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_CODEWIN" />
 			</Group>
 		</Groups>
 
@@ -56,7 +60,16 @@
 				If you do not want an image next to your command, remove the Icon node /> -->
 			<Button guid="guidMediatorNavigatorPackageCmdSet" id="MediatorNavigatorId" priority="0x0100" type="Button">
 				<Parent guid="guidMediatorNavigatorPackageCmdSet" id="MyMenuGroup" />
-				<Icon guid="ImageCatalogGuid" id="Forwards" />
+				<Icon guid="ImageCatalogGuid" id="HyperlinkForward" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>Go to IRequestHandler</ButtonText>
+				</Strings>
+			</Button>
+			<Button guid="guidMediatorNavigatorPackageCmdSet" id="MediatorNavigatorId" priority="0x0100" type="Button">
+				<Parent guid="guidMediatorNavigatorPackageCmdSet" id="MyMenuGroupContext" />
+				<Icon guid="ImageCatalogGuid" id="HyperlinkForward" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
 				<Strings>
 					<ButtonText>Go to IRequestHandler</ButtonText>
 				</Strings>
@@ -72,6 +85,7 @@
 		<GuidSymbol name="guidMediatorNavigatorPackageCmdSet" value="{5193e04c-6ef9-441a-8a4f-94c25ff77f69}">
 			<IDSymbol name="MyMenuGroup" value="0x1020" />
 			<IDSymbol name="MediatorNavigatorId" value="0x0100" />
+			<IDSymbol name="MyMenuGroupContext" value="0x0002" />
 		</GuidSymbol>
 	</Symbols>
 </CommandTable>
