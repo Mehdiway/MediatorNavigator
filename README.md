@@ -22,7 +22,7 @@ Coming soon! (A GIF showing navigation from `IRequest` to `IRequestHandler`)
 
 ## Usage
 1. Open a C# file containing an **IRequest**.
-2. Press `Ctrl + Alt + G` (or customize the shortcut in VS settings).
+2. Click **Tools > Go to IRequestHandler** in Visual Studio's menu.
 3. The extension will:
 - Find the corresponding `IRequestHandler<TRequest, TResponse>`.
 - Open the file containing the handler.
