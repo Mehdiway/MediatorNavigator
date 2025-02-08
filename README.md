@@ -34,11 +34,6 @@ This extension works out-of-the-box but can be customized in **Visual Studio’s
 ## Development
 ### Prerequisites
 - **Visual Studio 2022** with the **Extensibility Development** workload.
-- .NET 7+ SDK
-- **MediatR** installed in your project.
-
-### Packaging the VSIX
-```msbuild /t:rebuild /p:Configuration=Release```
 
 ### Contributing
 
